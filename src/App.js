@@ -4,7 +4,7 @@ import QRScanner from './components/QRScanner';
 const App = () => {
   return (
     <div>
-      <h1>My QR scanner app</h1>
+      <h1>App BCP Registrar usuario</h1>
       <QRScanner />
     </div>
 
