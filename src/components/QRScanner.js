@@ -7,7 +7,6 @@ const QRScanner = () => {
    useEffect(() => {
       const codeReader = new BrowserMultiFormatReader();
       codeReader.decodeFromInputVideoDevice(undefined, 'video').then(result => {
-         console.log("result", result)
          const res = result.text;
          const cleanString = res.replace(/\\/g, '').replace(/\n/g, '').replace(/\r/g, '').replace(/\t/g, '');
          const jsonObject = JSON.parse(cleanString);
